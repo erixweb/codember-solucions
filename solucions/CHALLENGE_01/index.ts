@@ -1,4 +1,4 @@
-import { TEXT } from "./text.ts"
+const TEXT = await fetch("https://codember.dev/data/message_01.txt").then((res) => res.text())
 
 const group = (text: string): string => {
 	let entries = text.split(" ")
